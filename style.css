@@ -1,0 +1,11 @@
+.list-group-item:nth-child(even) {
+  background-color: #eee;
+}
+
+label {
+  padding: 0 .5em;
+}
+
+input[type=radio] {
+  margin: 0 8px;
+}
