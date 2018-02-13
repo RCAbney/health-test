@@ -3,87 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <title>Health Test Questionnaire</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
-  <div class="row">
-   <div class="col">
-     <p class="text-center"><strong>Self-Assessment using the STOP-BANG Obstructive Sleep Apnea (OSA) Questionnaire</strong><p>
-      <p class="lead">Please answer yes or no to each of the eight (8) questions.</p>
-      <p>If you answer YES to two (2) or more questions we recommend you follow up with your Primary Care Physician.</p>
-     
-     
-      <ul class='list-group'>
-        <li class='list-group-item'>Do you SNORE loudly (louder than talking)?
-          <div class="float-right">
-            <label for="question1Y">Yes</label><input type="radio" name="question1" value="yes">
-            <label for="question1N">No<input type="radio" name="question1" value="no"></label>
-          </div>
-        </li>
-        <li class='list-group-item'>Do you often feel TIRED, fatigued, or sleepy during daytime?
-          <div class="float-right">
-            <label for="question2Y">Yes</label><input type="radio" name="question2" value="yes">
-            <label for="question2N">No<input type="radio" name="question2" value="no"></label>
-          </div>
-        </li>
-        <li class='list-group-item'>Has anyone OBSERVED you stop breathing during your sleep?
-          <div class="float-right">
-            <label for="question3Y">Yes</label><input type="radio" name="question3" value="yes">
-            <label for="question3N">No<input type="radio" name="question3" value="no"></label>
-          </div>
-        </li>
-        <li class='list-group-item'>Do you have or are you being treated for high blood PRESSURE?
-          <div class="float-right">
-            <label for="question4Y">Yes</label><input type="radio" name="question4" value="yes">
-            <label for="question4N">No<input type="radio" name="question4" value="no"></label>
-          </div>
-        </li>
-        <li class='list-group-item'>Body Mass Index (BMI) greater than 35?
-          <div class="float-right">
-            <label for="question5Y">Yes</label><input type="radio" name="question5" value="yes">
-            <label for="question5N">No<input type="radio" name="question5" value="no"></label>
-          </div>
-        </li>
-        <li class='list-group-item'>AGE over 50 years?
-          <div class="float-right">
-            <label for="question6Y">Yes</label><input type="radio" name="question6" value="yes">
-            <label for="question6N">No<input type="radio" name="question6" value="no"></label>
-          </div>
-        </li>
-        <li class='list-group-item'>NECK circumference greater than 16 inches
-          <div class="float-right">
-            <label for="question7Y">Yes</label><input type="radio" name="question7" value="yes">
-            <label for="question7N">No<input type="radio" name="question7" value="no"></label>
-          </div>
-        </li>
-        <li class='list-group-item'>GENDER: Male?
-         <div class="float-right">
-             <label for="question8Y">Yes</label><input type="radio" name="question8" value="yes">
-            <label for="question8N">No<input type="radio" name="question8" value="no"></label>
-          </div>
-        </li>
-        
-      </ul>
-   </div>
-  </div>
-      <button id="answerButton" class="btn btn-lg btn-primary">Submit</button>
-
-</div>
-
-<p>
-Yes circled 0 - 2		Low Risk of OSA
-Yes circled 3 - 4		Intermediate Risk of OSA	[schedule counsel with your PCP]
-Yes circled 5 - 8		High risk of OSA			[schedule counsel with your PCP]
-</p>
+<p class="text-center"><strong>Self-Assessment using the STOP-BANG Obstructive Sleep Apnea (OSA) Questionnaire</strong><p>
+ <p class="lead">Please answer yes or no to each of the eight (8) questions.</p>
+ <p>If you answer YES to two (2) or more questions we recommend you follow up with your Primary Care Physician.</p>
 
 
-<!--bootstrap stuffs-->
+ <ul>
+   <li>Do you SNORE loudly (louder than talking)?
+     <div class="float-right">
+       <label for="question1Y">Yes</label><input type="radio" name="question1" value="yes">
+       <label for="question1N">No<input type="radio" name="question1" value="no"></label>
+     </div>
+   </li>
+   <li>Do you often feel TIRED, fatigued, or sleepy during daytime?
+     <div class="float-right">
+       <label for="question2Y">Yes</label><input type="radio" name="question2" value="yes">
+       <label for="question2N">No<input type="radio" name="question2" value="no"></label>
+     </div>
+   </li>
+   <li>Has anyone OBSERVED you stop breathing during your sleep?
+     <div class="float-right">
+       <label for="question3Y">Yes</label><input type="radio" name="question3" value="yes">
+       <label for="question3N">No<input type="radio" name="question3" value="no"></label>
+     </div>
+   </li>
+   <li>Do you have or are you being treated for high blood PRESSURE?
+     <div class="float-right">
+       <label for="question4Y">Yes</label><input type="radio" name="question4" value="yes">
+       <label for="question4N">No<input type="radio" name="question4" value="no"></label>
+     </div>
+   </li>
+   <li>Body Mass Index (BMI) greater than 35?
+     <div class="float-right">
+       <label for="question5Y">Yes</label><input type="radio" name="question5" value="yes">
+       <label for="question5N">No<input type="radio" name="question5" value="no"></label>
+     </div>
+   </li>
+   <li>AGE over 50 years?
+     <div class="float-right">
+       <label for="question6Y">Yes</label><input type="radio" name="question6" value="yes">
+       <label for="question6N">No<input type="radio" name="question6" value="no"></label>
+     </div>
+   </li>
+   <li>NECK circumference greater than 16 inches
+     <div class="float-right">
+       <label for="question7Y">Yes</label><input type="radio" name="question7" value="yes">
+       <label for="question7N">No<input type="radio" name="question7" value="no"></label>
+     </div>
+   </li>
+   <li>GENDER: Male?
+    <div class="float-right">
+        <label for="question8Y">Yes</label><input type="radio" name="question8" value="yes">
+       <label for="question8N">No<input type="radio" name="question8" value="no"></label>
+     </div>
+   </li>
+   
+ </ul>
+    <button id="answerButton">Submit</button>
+
+<p class='results'></p>
+
 <script type="text/javascript" src="app.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
